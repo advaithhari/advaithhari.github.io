@@ -17,13 +17,13 @@ h1 {
 
   }
   .card {
-margin-auto;
+margin: auto;
    width:800px;
   border-left:solid 20px var(--accent);
   border-right:solid 20px var(--accent);
   border-top:solid 20px var(--accent);
   border-bottom:solid 20px var(--accent);
-  margin-right:15px;
+
   box-sizing:border-box;
 
   border-color: darkred;
@@ -33,7 +33,7 @@ margin-auto;
   .card1 {
     text-align: center;
    position: relative;
-   top: 260px;
+   top: 400px;
 
    display: flex;
     flex-direction: column;
@@ -79,4 +79,55 @@ margin-auto;
       font-family: 'Gayathri', sans-serif;
 
 
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
