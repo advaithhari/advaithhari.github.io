@@ -1,0 +1,82 @@
+body {
+   background-color: #198e80; 
+}
+h1 {
+  text-align: center;
+    font-family: 'Rowdies', cursive;
+    font-size: 50px;
+}
+
+
+.card-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+
+  }
+  .card {
+margin-auto;
+   width:800px;
+  border-left:solid 20px var(--accent);
+  border-right:solid 20px var(--accent);
+  border-top:solid 20px var(--accent);
+  border-bottom:solid 20px var(--accent);
+  margin-right:15px;
+  box-sizing:border-box;
+
+  border-color: darkred;
+  transition: border 100ms;
+  }
+    
+  .card1 {
+    text-align: center;
+   position: relative;
+   top: 260px;
+
+   display: flex;
+    flex-direction: column;
+    justify-content: right;
+    
+  }
+  
+  .card:hover {
+    display: block;
+    text-align: center;
+    cursor:pointer;
+    background-color:#06312c;
+    width:800px;
+    border-left:solid 5px ;
+    border-right:solid 5px ;
+    border-top:solid 5px ;
+    border-bottom:solid 5px;
+    border-color: darkred;
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+
+  .fa-github {
+      
+      font-size: 36px;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  b{
+      position: absolute;
+      text-align: center;
+      color: rgb(29, 11, 24);
+      font-family: 'Gayathri', sans-serif;
+
+
+  }
